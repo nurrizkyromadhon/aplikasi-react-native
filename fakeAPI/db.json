@@ -1,0 +1,16 @@
+{ 
+  "users": [
+    {
+        "id":1,
+        "name":"Rizky",
+        "email": "rizky@gmail.com",
+        "bidang":"Web develop"
+    },
+    {        
+        "name":"Rizky",
+        "email": "rizkyr@gmail.com",
+        "bidang":"Web IT",
+        "id":2
+    }
+  ]
+}

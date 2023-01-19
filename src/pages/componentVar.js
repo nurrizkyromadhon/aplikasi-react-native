@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Text,View,ScrollView,StatusBar,Image, TouchableOpacity,Switch, TextInput,StyleSheet} from 'react-native'
 
-class App extends Component {
+class Apps extends Component {
   constructor(props) {
     super(props);
     this.state = { 
@@ -45,7 +45,7 @@ class App extends Component {
         </View>
       </View>*/
       //Header
-      <ScrollView style={{flex:1}}>
+      /*<ScrollView style={{flex:1}}>
       <StatusBar barStyle="light-content" backgroundColor="#7B1FA2"/>
         <View style={{
           backgroundColor:'#E040FB',
@@ -53,7 +53,7 @@ class App extends Component {
           justifyContent:'center'        ,
           alignItems:'center',
           elevation:3
-        }}>
+        }}>          
           <Text style={{
             color:'#FFFF',
             fontWeight:'bold',
@@ -62,6 +62,7 @@ class App extends Component {
             {this.state.header}</Text>
         </View>
         <View style={{justifyContent:'center',alignItems:'center'}}>
+          <Hadd/>
           <Image 
             source={require('./src/images/image1.jpg')}
             style={{width:300,height:300}}/>          
@@ -85,7 +86,7 @@ class App extends Component {
         style={{borderWidth:1, 
           marginHorizontal:20,
           paddingHorizontal:10,
-          borderColor:'#E040FB',
+          borderColor:'#000',
           borderRadius:3,
           backgroundColor:'#E040FB',
           color:'#FFFF'
@@ -94,31 +95,16 @@ class App extends Component {
         />      
 
         <TouchableOpacity style={style.button}>
-          <Text style={{color:'#FFFF'}}>Click Me</Text>
+          <Text style={{color:'#FFFF'}}>Click Mee</Text>
         </TouchableOpacity>
         <TouchableOpacity 
         style={style.button}>
           <Text style={{color:'#FFFF'}}>Click Me</Text>
         </TouchableOpacity>
-
-        
-      </ScrollView>
+        <Text>Belanja</Text>        
+        <Belanjaa/>
+      </ScrollView>*/
+      <Text>Belanja</Text>
     );
   }
 }
-
-const style= StyleSheet.create({
-  button:{
-    backgroundColor:'green', 
-    paddingVertical:20,
-    justifyContent:'center',
-    alignItems:'center',
-    marginTop:20,
-    marginBottom:50,
-    marginHorizontal:20,
-    borderRadius:50,
-    elevation:3
-  }
-})
-
-export default App;
